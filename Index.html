@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Developer Portfolio">
+    <title>Full Stack Developer Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Developer Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section text-white text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">I am a Full Stack Developer specializing in building exceptional digital experiences.</p>
+            <a href="#about" class="btn btn-outline-light btn-lg mt-3">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+<section id="about" class="about-section bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                <img src="kannupic_new.png" alt="Profile Picture" class="img-fluid original-size">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h2>About Me</h2>
+                
+                <div class="about-item">
+                    <h3><i class='bx bx-user'></i> Get To Know Me</h3>
+                    <p>I've spent the last two months cutting my teeth in full-stack web development by going through highly recommended online courses from top-tier universities like the University of British Columbia. I've built an array of personal projects, some of which you'll see on the next page. I enjoy programming at either end of the tech stack, whether it's creating data models and optimizing database queries, or developing web-based applications using HTML, CSS, PHP, JavaScript, and React along with GIT repository.</p>
+                </div>
+                
+                <div class="about-item">
+                    <h3><i class='bx bx-certification'></i> What Qualifies Me to Build Your Website</h3>
+                    <p>I hold a Master of Business Administration (MBA) from University Canada West, Vancouver, BC. I also earned a Post Graduate Diploma in Computer Applications from Lovely Professional University, Phagwara, India, graduating with distinction. Additionally, I hold a Bachelor of Technology (Honors) in Computer Science and Engineering from Guru Tech Bahadur Institute of Technology (GGSIPU), New Delhi, India.</p>
+                </div>
+                
+                <div class="about-item">
+                    <h3><i class='bx bx-building'></i> Powerhouses Where I Honed My Skillset</h3>
+                    <p>Throughout my career, I have worked for prominent companies such as Cognizant, Emerson, HCL Technologies, and Infosys.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row justify-content-center">
+            <!-- Project Card -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <!-- <img src="weather-app-thumbnail.jpg" class="card-img-top" alt="Weather App Thumbnail"> -->
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Weather App</h5>
+                        <p class="card-text">A simple weather application that allows users to get real-time weather info by entering a city name.</p>
+                        <a href="weather.html" target="_blank" class="btn btn-primary mt-auto">View App</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards below as needed -->
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-secondary text-white">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light" aria-label="Submit Form">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy;2025 Website by Kannu</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kannumaggu" target="_blank" title="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
